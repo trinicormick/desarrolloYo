@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.caja {
+    height: 150px;
+    width: 150px;
+    background-image: linear-gradient(to right, pink, orange);
+    transition: 2s;
+    
+   /* transform: translate(10px , 20px);
+   transform: scale(1);*/
+   
+
+
+}
+.caja:hover {
+    transform: rotate(360deg);
+    box-shadow: 3px 3px black;
+}
+.latir {
+    
+    animation-name: latir;
+    animation-iteration-count: infinite;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+}
+@keyframes latir {
+    from {
+        transform: scale(1.5);
+    }
+    to {
+        transform: scale(2);
+    }
+}
